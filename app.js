@@ -17,12 +17,7 @@ app.get("/", function(request, response) {
 var listener = app.listen(process.env.PORT, function() {
   console.log('Your app is listening on port ' + listener.address().port);
 });
-/*app.get('/api/stats', (req, res) => {
-    res.send({guildCount: bot.guilds.size, uptime: bot.uptime, ping: bot.ping, userCount: bot.users.size, messages: bot.messages, start: bot.startedAt, channels: bot.channels.size, data: client });
-});*/
-app.get('/dev', (req, res) => {
-    res.send({guildCount: bot.guilds.size, uptime: bot.uptime, ping: bot.ping, userCount: bot.users.size, messages: bot.messages, start: bot.startedAt, channels: bot.channels.size,dev: "My owner is Tea Cup#9999"});
-});
+
 
 
 
