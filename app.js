@@ -103,6 +103,9 @@ app.get("/wiki", function(request, response) {
 app.get("/list", function(request, response) {
     response.sendFile(__dirname + '/public/list.html');
 });
+app.get("/updates", function(request, response) {
+    response.sendFile(__dirname + '/public/updates.html');
+});
 
 const DBL = require("dblapi.js");
 const dbl = new DBL('DBL_TOKEN', client); // Go here for the token https://discordbots.org/
