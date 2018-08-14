@@ -18,64 +18,7 @@ var listener = app.listen(process.env.PORT, function() {
   console.log('Your app is listening on port ' + listener.address().port);
 });
 
-/*
-const scopes = ['identify', 'guilds'];
-const passport = require('passport'), Strategy = require('passport-discord').Strategy
 
-passport.use(new Strategy({
-    clientID: '453601455698608139',
-    clientSecret: 'FjNWw6pHN6x-VVvhLA2qesriWb5VTpIN',
-    callbackURL: 'https://koala.glitch.me/',   
-    scope: scopes
-}, (accessToken, refreshToken, profile, done) => {
-    console.log(accessToken + " | " + refreshToken);
-    process.nextTick(() => {
-        return done(null, profile);
-    });
-}));
-app.get('/dashboard', checkAuth, (req, res) => {
-    console.log(req.user)
-	res.render('dashboard', {
-		cache: true,
-        user: req.user
-    });
-});
-app.get('/profile', checkAuth, (req, res) => {
-    console.log(req.user)
-	res.render('profile', {
-		cache: true,
-        user: req.user
-    });
-});
-
-app.get('/login',
-	passport.authenticate('discord', { scope: scopes }),
-	(req, res) => {
-  
-  console.log(req)
-  console.log("Finished logging");
-}
-        
-);
-app.get('/callback',
-    passport.authenticate('discord', { failureRedirect: '/' }),
-	(req, res) => { res.redirect('/dashboard') } // auth success
-);
-app.get('/logout', (req, res) => {
-    req.logout();
-  console.log(req.user)
-    res.redirect('/');
-});
-function checkAuth(req, res, next) {
-    if (req.isAuthenticated()) return next();
-    res.redirect('/login')
-}
-app.get('*'), (req, res) => {
-	res.render('404', {
-		cache: true,
-        user: req.user
-    });
-};*/
 
 
 app.get('/stats/styles', (req, res) => {
