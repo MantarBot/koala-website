@@ -1,11 +1,11 @@
 {
 	
   		"dbURL": "mongodb://",
-		"dbURL2": "mongodb://", //still working on these 2 ^
+		"dbURL2": "mongodb://", 
 		"dbName": "x",
 		"collectionName": "x",
-		"passportClientID": "453601455698608139",//https://discordapp.com/developers/applications/
-		"passportClientSecret": "VU_u7kSsfcg7_VRaPpSKPGCC9WlWgSP7",//^
+		"passportClientID": "x",
+		"passportClientSecret": "x",
 		"sessionSecret": "ANYTHING"
  
 }
