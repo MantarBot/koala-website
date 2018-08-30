@@ -24,7 +24,26 @@ var listener = app.listen(process.env.PORT, function() {
 app.get('/stats/styles', (req, res) => {
     res.sendFile(process.cwd() + '/web/htmlCss/stats/index.css');
 });
+app.get('/about', (req, res) => {
+let e =bot.guilds.get("482664374784229376") //serifix
+let o =bot.guilds.get("453600107191861271")
+console.log("Someone just used ABOUT!")
+bot.fetchUser("293140948416856064").then(async d => { //shadat
+bot.fetchUser("338192747754160138").then(async f => { //teacup
+bot.fetchUser("364007557045551106").then(async g => { //end
+  
+let tavatar = f.displayAvatarURL.split('?')[0]
+let savatar = d.displayAvatarURL.split('?')[0]
+let eavatar = g.displayAvatarURL.split('?')[0]
+let ser = e.iconURL
+let sev = o.iconURL
+  res.render(process.cwd() + '/web/htmlCss/about/index.ejs', {tavatar: tavatar , savatar: savatar , eavatar: eavatar , ser: ser , sev: sev});
+})
+  
+})
+  })
 
+});
 app.get('/stats/js', (req, res) => {
     res.sendFile(process.cwd() + '/web/htmlCss/stats/index.js');
 });
