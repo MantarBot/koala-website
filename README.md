@@ -8,7 +8,7 @@
 ## Updates 
 - Somethings will change several times while i setup the dashboard!
 
-
+- Please note i will not show everything 
 
 
 
