@@ -6,6 +6,8 @@
 - Code In Action! Go [Here](https://koala.glitch.me/)
 
 ## Updates 
+
+- Working on Halloween Edits!
 - Somethings will change several times while i setup the dashboard!
 
 - Please note i will not show everything 
